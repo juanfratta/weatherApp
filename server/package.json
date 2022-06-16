@@ -1,0 +1,37 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "app weather server",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.ts",
+    "start": "exec node dist/index.js",
+    "build": "tsc",
+    "test": "NODE_ENV=test jest --silent",
+    "test-watch": "jest --watch",
+    "coverage": "jest --coverage"
+  },
+  "author": "Juan Fratta",
+  "license": "ISC",
+  "dependencies": {
+    "@overnightjs/core": "^1.7.6",
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-promise-router": "^4.1.1",
+    "nodemon": "^2.0.16"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.42",
+    "axios-mock-adapter": "^1.21.1",
+    "jest": "^28.1.1",
+    "supertest": "^6.2.3",
+    "ts-jest": "^28.0.4",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
+  }
+}
